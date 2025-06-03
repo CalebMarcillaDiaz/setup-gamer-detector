@@ -1,0 +1,89 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #00ffcc;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: #ffcc00;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: 0 auto 20px;
+  text-transform: uppercase;
+}
+
+#explicacion {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+button {
+  background-color: #00ffcc;
+  color: #1a1a1a;
+  font-size: 1em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #ffcc00;
+}
+
+#webcam-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+video {
+  border: 3px solid #00ffcc;
+  border-radius: 10px;
+}
+
+hr {
+  border: 1px solid #00ffcc;
+  margin: 30px 0;
+}
+
+input {
+  padding: 10px;
+  background-color: #333;
+  color: #ffffff;
+  border: 2px solid #00ffcc;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+#image-result {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffcc00;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#input-image {
+  display: block;
+  margin: 20px auto;
+}

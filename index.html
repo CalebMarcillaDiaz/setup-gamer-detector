@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Detector de Objetos del Setup Gamer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.0.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8.4/dist/teachablemachine-image.min.js"></script>
+</head>
+<body>
+  <h1>Detector de Objetos del Setup Gamer</h1>
+
+  <div id="explicacion">
+    <h3>¿Qué hace esta aplicación?</h3>
+    <p>
+      Este modelo fue entrenado en <strong>Teachable Machine</strong> para identificar elementos como 
+      <strong>mouse, teclado, monitor, audífonos</strong> y otros componentes de un setup gamer.
+      Puedes usar tu cámara o subir una imagen para detectar los objetos presentes.
+    </p>
+  </div>
+
+  <div id="webcam-container">
+    <video id="webcam" autoplay playsinline width="224" height="224"></video>
+  </div>
+
+  <div id="label-container"></div>
+
+  <button onclick="init()">Iniciar Webcam</button>
+  <button onclick="pauseWebcam()">Pausar Webcam</button>
+
+  <hr>
+
+  <h3>Detección de objetos por foto</h3>
+  <input type="file" accept="image/*" onchange="handleImageUpload(event)">
+  <br><br>
+  <img id="input-image" width="224" height="224" style="display:none;">
+  <div id="image-result">Esperando imagen...</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
