@@ -1,1 +1,1 @@
-# setup-gamer-detector
+# setupgamer detector
